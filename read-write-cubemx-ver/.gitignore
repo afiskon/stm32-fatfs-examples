@@ -1,0 +1,4 @@
+build
+*.backup
+.mxproject
+Src/*.tmp
