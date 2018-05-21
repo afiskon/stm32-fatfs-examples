@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>/home/eax/projects/sandbox/stm32/stm32-fatfs-st7735-image/\main</ProjectName>
+<ProjectName>/home/eax/projects/stm32/stm32-fatfs-examples/st7735-images-native-ver/\main</ProjectName>
 <CMSIS>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Drivers/CMSIS</CMSIS>
 <HAL_Driver>/home/eax/STM32Cube/Repository//STM32Cube_FW_F4_V1.18.0/Drivers/CMSIS</HAL_Driver>
 
@@ -9,6 +9,18 @@
 
 <filestoremove>
 	<file>
+	   		<name>Src/user_diskio.c</name>
+	   		<name>Src/fatfs.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/option/syscall.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/diskio.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/ff.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/option/syscall.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/diskio.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/ff.c</name>
+	   		<name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</name>
 	</file>
 </filestoremove>
 
@@ -17,6 +29,7 @@
 	   <include></include>
     </Aincludes>
 	<Cincludes>
+	   		<include>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src</include>
     </Cincludes>
 </inctoremove>
 
@@ -62,7 +75,6 @@
 	   <include>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Drivers/STM32F4xx_HAL_Driver/Inc</include>
 	   <include>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy</include>
 	   <include>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include</include>
-	   <include>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src</include>
 	   <include>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Drivers/CMSIS/Include</include>
 
     </Cincludes>
@@ -71,27 +83,6 @@
 
     <underRoot>false</underRoot>
 
-      <group>
-        <name>Middlewares</name>  
-                    <group>
-                            <name>FatFs</name>
-                                            <file>
-                                                    <name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/option/syscall.c</name>
-                                            </file>
-                                            <file>
-                                                    <name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c</name>
-                                            </file>
-                                            <file>
-                                                    <name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/diskio.c</name>
-                                            </file>
-                                            <file>
-                                                    <name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/ff.c</name>
-                                            </file>
-                                            <file>
-                                                    <name>/home/eax/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</name>
-                                            </file>
-                </group>
-      </group> 
 	   <group>
 	    <name>Drivers</name> 
 		   <group>
@@ -161,14 +152,6 @@
                                 </file>
 
                                 <file>
-                                 <name>Src/user_diskio.c</name>
-                                </file>
-
-                                <file>
-                                 <name>Src/fatfs.c</name>
-                                </file>
-
-                                <file>
                                  <name>Src/stm32f4xx_it.c</name>
                                 </file>
 
@@ -178,15 +161,6 @@
 
 
 
-               <group>
-        <name>Src</name>
-                    <group>
-                    <name>user_diskio.c</name>
-                                    <file>
-                                            <name>Src/user_diskio.c</name>
-                                    </file>
-                    </group>
-        </group>
                <group>
         <name>Src</name>
                     <group>
@@ -202,15 +176,6 @@
                     <name>stm32f4xx_hal_msp.c</name>
                                     <file>
                                             <name>Src/stm32f4xx_hal_msp.c</name>
-                                    </file>
-                    </group>
-        </group>
-               <group>
-        <name>Src</name>
-                    <group>
-                    <name>fatfs.c</name>
-                                    <file>
-                                            <name>Src/fatfs.c</name>
                                     </file>
                     </group>
         </group>
