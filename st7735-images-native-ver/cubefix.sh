@@ -6,5 +6,4 @@ set -e
 
 cp Makefile.backup Makefile
 dos2unix Src/main.c
-dos2unix Src/user_diskio.c
-sed -i -e '1,47d' Src/main.c
+sed -i -e '1,38d' Src/main.c
