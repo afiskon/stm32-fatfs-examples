@@ -14,7 +14,7 @@
 # target
 ######################################
 TARGET = main
-FIRMWARE = $(HOME)/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0
+FIRMWARE = $(HOME)/STM32Cube/Repository/STM32Cube_FW_F4_V1.23.0
 
 
 ######################################
@@ -97,7 +97,7 @@ PERIFLIB_SOURCES =
 #######################################
 # binaries
 #######################################
-BINPATH=/usr/bin
+BINPATH=/usr/local/bin
 PREFIX=arm-none-eabi-
 CC = $(BINPATH)/$(PREFIX)gcc
 AS = $(BINPATH)/$(PREFIX)gcc -x assembler-with-cpp
